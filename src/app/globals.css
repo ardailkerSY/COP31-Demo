@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #0b0f19;
+    --bg-card: rgba(18, 26, 43, 0.75);
+    --bg-card-hover: rgba(26, 38, 64, 0.85);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-highlight: rgba(0, 229, 255, 0.3);
+    
+    --primary: #00e5ff;
+    --primary-glow: rgba(0, 229, 255, 0.25);
+    --secondary: #3b82f6;
+    --accent: #8b5cf6;
+    
+    --status-normal: #10b981;
+    --status-warning: #f59e0b;
+    --status-critical: #ef4444;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    background-image: 
+      radial-gradient(at 10% 10%, rgba(0, 229, 255, 0.06) 0px, transparent 50%),
+      radial-gradient(at 90% 90%, rgba(139, 92, 246, 0.06) 0px, transparent 50%);
+    color: #f3f4f6;
+    min-height: 100vh;
+    font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+  }
+}
+
+.glass-panel {
+  background: rgba(18, 26, 43, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
