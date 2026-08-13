@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AquaShield Twin — Dam Safety Digital Monitoring",
+  title: "Dam Digital Monitoring & Predictive Intelligence",
   description:
-    "Real-time dam safety digital twin: 3D structural visualization, live sensor telemetry, and physics-AI risk prediction.",
+    "Real-time dam safety monitoring: 3D structural visualization, live sensor telemetry, and predictive intelligence for infrastructure resilience.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
